@@ -1,7 +1,7 @@
 def my_app(env, start_resp):
     outer=list()
     status='200 OK'
-    resp_header==[('Content-type','text/plain')]
+    resp_header=[('Content-type','text/plain')]
     try:
         params=list(env['QUERY_STRING'].split('&'))
         for par in params:
